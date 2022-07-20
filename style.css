@@ -71,6 +71,7 @@ main{
     height: auto;
     width: 100%;
     margin-bottom:20px;
+    padding: 0 10%;
 }
 aside{
     height: 312px;
@@ -215,8 +216,14 @@ footer .about{
         height:auto;
     }
     .banner{
-        width: 100%;
-        border-radius:0px;
+        width: 90%;
+        border-radius:20px;
+        margin-top: 40px;
+    }
+    .banner-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .banner-btn{
         margin-top: 20px;
@@ -225,6 +232,7 @@ footer .about{
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 0 5%;
     } 
     aside{
         display: flex;
