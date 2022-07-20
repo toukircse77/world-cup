@@ -7,6 +7,31 @@
 body{
     Font-family: Poppins;
 }
+/* animation  */
+/* animation  */
+@keyframes button{
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 100PX;
+        background-color:rgb(107, 248, 166);
+        color:#DD0000;
+    }
+    100%{
+        margin-left:0PX;
+    }
+}
+@keyframes text-highlight {
+    0%{
+        font-size: 50px;
+    }
+    100%{
+        font-size: 60px;
+        color: aqua;
+        transition: ease-in-out;
+    }
+}
   /*------- header style------  */
 header{
     
@@ -39,6 +64,9 @@ header{
     align:left;
     vertical-align: top;
     color:#FFFFFF ;
+    animation-name: text-highlight;
+    animation-duration:3s;
+    animation-delay: .5s;
 }
 .banner-info p{
     font-size: 16px;
@@ -51,6 +79,11 @@ header{
     border-radius: 5px;
     color: white;
     font-size: 20px;
+    position: relative;
+    animation-name: button;
+    animation-duration: 4s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
 }
 .fa-angle-right{
     margin-left: 10px;
