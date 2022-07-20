@@ -209,7 +209,7 @@ footer .about{
 
 /* media queries  */
  /* Tablet devices  */
- @media screen and (min-width:768px) and (max-width:1024px) {
+ @media screen and (min-width:669px) and (max-width:992px) {
     header{
         display: flex;
         align-items: flex-start;
@@ -269,5 +269,65 @@ footer .about{
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
+    }
+}
+/* Mobile phn device  */
+@media screen and (max-width:668px) {
+    
+    header{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content:center;
+        margin-top: 20px;
+    }
+    .banner-text{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-text h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .banner-btn button{
+        width: 130px;
+        height: 60px;
+        border-radius: 10px;
+        margin-top:20px;
+    }
+    main{
+       display: flex;
+       flex-direction: column; 
+       height: auto;
+       width: 100%;
+    }
+    aside{
+        background-color:white;
+    }
+    .aside-btn{
+        border: 1px solid gray;
+    }
+    .article-cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    footer{
+        height: auto;
+    }
+    .contact{
+        margin: 10px 0px;
     }
 }
